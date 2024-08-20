@@ -52,11 +52,28 @@ label {
 
 input[type="text"],
 input[type="email"],
-textarea {
+textarea,
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #0056b3; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+select {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+}
+
+select option {
+    padding: 10px;
 }
 
 textarea {
